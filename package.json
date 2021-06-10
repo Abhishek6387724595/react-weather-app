@@ -1,8 +1,11 @@
 {
   "name": "awesomeapp",
+  "homepage": "https://Abhishek6387724595.github.io/ReactWeb",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@material-ui/core": "^4.11.4",
+    "@material-ui/icons": "^4.11.2",
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.5.0",
     "@testing-library/user-event": "^7.2.1",
@@ -10,14 +13,19 @@
     "bootstrap": "^5.0.0-alpha1",
     "concurrently": "^5.2.0",
     "json-server": "^0.16.1",
+    "material-ui": "^0.20.2",
     "react": "^16.13.1",
     "react-digital-clock": "^0.1.2",
     "react-dom": "^16.13.1",
+    "react-hook-form": "^6.9.6",
     "react-router-dom": "^5.2.0",
     "react-scripts": "3.4.1",
-    "tachyons": "^4.12.0"
+    "tachyons": "^4.12.0",
+    "tesseract.js": "^2.1.4"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "json-server": "json-server --watch db.json --port 3001",
     "start:dev": "concurrently \"npm start\" \"npm run json-server\"",
@@ -39,5 +47,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "gh-pages": "^3.2.0"
   }
 }
