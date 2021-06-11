@@ -26,7 +26,7 @@ const ToDolist = () =>{
         <>
             <div className="main_div">
                 <div className="center_div">
-                    <h1>{num}Hi</h1>
+                    <h1>{num}</h1>
                     <div className="btn_div">
                         <Tooltip title="Add">
                             <button onClick={incNum} className="btn_green">
