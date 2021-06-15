@@ -8,7 +8,7 @@ const TempApp = ()=>{
 
     useEffect(() => {
         async function getData(){
-            const resp=await Axios.get(`http://api.openweathermap.org/data/2.5/weather?q=${search}&units=metric&appid=b27567411759b993db5aaf023340d3b7`);
+            const resp=await Axios.get(`https://api.openweathermap.org/data/2.5/weather?q=${search}&units=metric&appid=b27567411759b993db5aaf023340d3b7`);
             console.log(resp);
             setCity(resp.data);
         }
