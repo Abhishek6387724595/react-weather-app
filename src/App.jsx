@@ -1,10 +1,10 @@
 import React from 'react'
-import ToDolist from './ToDolist.jsx';
+import TempApp from './TempApp.jsx';
 
 const App =()=>{
     return(
         <>
-            <ToDolist/>
+            <TempApp/>
         </>
     );
 }
